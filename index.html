@@ -612,6 +612,22 @@
                 ],
                 thumbnail: 'data'
             },
+            {
+                id: 'photography-manager',
+                title: 'Local-First Hybrid Photography Manager',
+                shortDesc: "Designed a privacy-centric Electron desktop application for managing digital and film photography workflows with a built-in mobile access server.",
+                longDesc: "<p>Engineered a sophisticated, <strong>locally-hosted desktop application</strong> built with Electron to provide comprehensive management for both digital and film photography. The system prioritizes data privacy by utilizing a local file system architecture with JSON-based metadata, ensuring 100% data ownership without cloud dependencies.</p><p>The application integrates a background <strong>Express.js web server</strong> to enable secure mobile access over local networks and utilizes the <strong>Sharp library</strong> for high-performance image processing. It features specialized modules for tracking film stocks, development data, and camera inventory, effectively bridging the gap between analog and digital workflows.</p>",
+                skills: ['Electron', 'Node.js', 'Express.js', 'JavaScript', 'Image Processing', 'Sharp', 'CSS3'],
+                publications: [],
+                paperStatus: '',
+                githubLink: '',
+                demoLink: '',
+                demoImages: [
+                    'https://i.postimg.cc/XJB7J9tD/Screenshot-2026-02-01-232225.png',
+                    'https://i.postimg.cc/FHKvzjLt/Screenshot-2026-02-01-232508.png'
+                ],
+                thumbnail: 'camera'
+            },
         ];
 
         // Grouped Skills Data Structure
@@ -656,7 +672,8 @@
                 'web': '<svg class="w-16 h-16 text-accent/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>',
                 'data': '<svg class="w-16 h-16 text-accent/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>',
                 'simulation': '<svg class="w-16 h-16 text-accent/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>',
-                'baseball': '<svg class="w-16 h-16 text-accent/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9 9 0 100-18 9 9 0 000 18z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 6.5c1.8 1.2 3 3.2 3 5.5 0 1.6-.6 3.1-1.6 4.2"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.5 6.5c-1.8 1.2-3 3.2-3 5.5 0 1.6.6 3.1 1.6 4.2"></path></svg>'
+                'baseball': '<svg class="w-16 h-16 text-accent/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9 9 0 100-18 9 9 0 000 18z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 6.5c1.8 1.2 3 3.2 3 5.5 0 1.6-.6 3.1-1.6 4.2"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.5 6.5c-1.8 1.2-3 3.2-3 5.5 0 1.6.6 3.1 1.6 4.2"></path></svg>',
+                'camera': '<svg class="w-16 h-16 text-accent/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>'
             };
             return icons[type] || '<svg class="w-16 h-16 text-accent/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>';
         }
