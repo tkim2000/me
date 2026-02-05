@@ -604,7 +604,7 @@
                 publications: [],
                 paperStatus: '',
                 githubLink: '',
-                demoLink: '',
+                demoLink: 'https://www.youtube.com/watch?v=FmPelx46j94',
                 thumbnail: 'baseball'
             },
             {
@@ -839,8 +839,16 @@
                 });
             } else if (project.demoLink) {
                 videoContainer.classList.add('aspect-video');
+                // Convert YouTube URL to embed format
+                let embedUrl = project.demoLink;
+                if (project.demoLink.includes('youtube.com/watch?v=')) {
+                    const videoId = project.demoLink.split('v=')[1]?.split('&')[0];
+                    if (videoId) {
+                        embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                    }
+                }
                 videoContainer.innerHTML = `
-                    <iframe src="${project.demoLink}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg"></iframe>
+                    <iframe src="${embedUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full rounded-lg"></iframe>
                 `;
             } else {
                 videoContainer.classList.add('aspect-video');
